@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(135deg, #080242, #2d0341);
+  color: white;
+  padding-top: 2rem;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+header,
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+form input,
+form button {
+  padding: 0.55rem;
+  font-size: 1.2rem;
+  border: none;
+  background-color: white;
+  outline: none;
+}
+
+form button {
+  color: #080242;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form button:hover {
+  background-color: #1363ca;
+  color: white;
+}
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.todo-list {
+  list-style-type: none;
+  width: 20rem;
+}
+.todo-list-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: #080242;
+  height: 2.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  font-size: 1.2rem;
+  transition: all 0.5s ease;
+}
+.todo-list-item li {
+  flex: 1;
+  transition: all 0.3s ease;
+}
+.todo-list-item button {
+  padding: 0.7rem;
+  background-color: green;
+  color: white;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.todo-list-item .del-btn {
+  background-color: red;
+}
+
+.completed li {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.fallOff {
+  transform: translateY(10rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+.fas {
+  pointer-events: none;
+}
+
+/*# sourceMappingURL=style.css.map */
